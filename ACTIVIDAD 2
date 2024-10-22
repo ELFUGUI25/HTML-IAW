@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIDAD 2</title>
+</head>
+<body>
+    <h1> ESTA ES LA ACTIVIDAD 2</h1>
+    <p> Aqui hay un texto de ejemplo</p>
+    <p>I will display &euro;</p>
+    <p>I will display &#8364;</p>
+    <p>I will display &#x20AC;</p> 
+
+    <ul>
+        <li> <a href="inicio"> inicio</a></li>
+    </ul>
+
+    <section id="inicio">
+        <article>
+            <h2>Artículo 1: HTML5</h2>
+            <p>HTML5 es la última versión del lenguaje de marcado que define la estructura y el contenido de una página web.</p>
+            <p>Algunas etiquetas nuevas incluyen: <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;aside&gt;</code>, y muchas más.</p>
+
+            <br>
+            <hr>
+        </article> 
+
+        <article>
+            <h2>Artículo 2</h2>
+            <p>texto de ejemplo</p>
+       
+            <section>
+                <h3>Aqui he usado un H3</h3>
+                <p>mas texto</p>
+                <ul>
+                    <li>ejemplos</li>
+                </ul>
+            </section>
+            <br>
+            <hr>
+        </article>
+
+    <footer>
+        <p>&copy; Aqui se finaliza la pagina con un pie de pagina</p>
+    </footer>
+</body>
+</html>
