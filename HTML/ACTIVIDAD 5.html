@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Web - Audio y Video</title>
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Reproductor Multimedia en la Web</h1>
+        <p>Ejemplos de uso de audio y video en HTML</p>
+    </header>
+
+    <main>
+        <!-- Sección de audio -->
+        <section>
+            <h2>Audio</h2>
+            
+            <!-- Audio simple con controles -->
+            <audio controls>
+                <source src="audio1.mp3" type="audio/mpeg">
+                <source src="audio1.ogg" type="audio/ogg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <p>Reproductor de audio con controles básicos.</p>
+
+            <!-- Audio en bucle y con reproducción automática -->
+            <audio controls autoplay loop>
+                <source src="audio2.mp3" type="audio/mpeg">
+                <source src="audio2.ogg" type="audio/ogg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <p>Reproductor de audio con reproducción automática y en bucle.</p>
+
+            <!-- Audio con un botón personalizado para iniciar -->
+            <audio id="audio3">
+                <source src="audio3.mp3" type="audio/mpeg">
+                <source src="audio3.ogg" type="audio/ogg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <button onclick="document.getElementById('audio3').play()">Reproducir audio personalizado</button>
+        </section>
+
+        <!-- Sección de video -->
+        <section>
+            <h2>Video</h2>
+            
+            <!-- Video simple con controles -->
+            <video width="640" height="360" controls>
+                <source src="video1.mp4" type="video/mp4">
+                <source src="video1.webm" type="video/webm">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <p>Video con controles básicos.</p>
+
+            <!-- Video en bucle y con reproducción automática -->
+            <video width="640" height="360" autoplay loop muted>
+                <source src="video2.mp4" type="video/mp4">
+                <source src="video2.webm" type="video/webm">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <p>Video que se reproduce automáticamente y en bucle.</p>
+
+            <!-- Video con previsualización de imagen de portada (poster) -->
+            <video width="640" height="360" controls poster="portada.jpg">
+                <source src="video3.mp4" type="video/mp4">
+                <source src="video3.webm" type="video/webm">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <p>Video con imagen de portada.</p>
+        </section>
+    </main>
+
+</body>
+</html>
