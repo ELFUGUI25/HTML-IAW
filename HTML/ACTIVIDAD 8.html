@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Web</title>
+    <title>Mi Web</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -25,19 +25,48 @@
 </head>
 <body>
     <div class="container">
-        <h1>Bienvenido a Mi Página Web</h1>
+        <h1>Bienvenido </h1>
         <p>Esta es una página web de ejemplo.</p>
 
-        <h2>Formulario de Contacto</h2>
+        <h2>Formulario</h2>
 <form action="/enviar" method="post">
     <label for="nombre">Nombre:</label><br>
     <input type="text" id="nombre" name="nombre" required><br><br>
 
+    <label for="usuario">Nombre de Usuario:</label><br>
+<input type="text" id="usuario" name="usuario" pattern="[A-Za-z0-9_]{5,15}" placeholder="Usuario (5-15 caracteres)" required><br><br>
+
+<label for="clave">Contraseña:</label><br>
+<input type="password" id="clave" name="clave" pattern=".{8,}" placeholder="Contraseña (mínimo 8 caracteres)" required><br><br>
+
+    <label for="edad">Edad:</label><br>
+<input type="number" id="edad" name="edad" min="18" max="100" required><br><br>
+
+<label for="fecha">Fecha de cumpleaños:</label><br>
+<input type="date" id="fecha" name="fecha" required><br><br>
+
     <label for="email">Correo Electrónico:</label><br>
     <input type="email" id="email" name="email" required><br><br>
 
+    <label for="dni">DNI</label><br>
+    <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Z]" title="Ingrese 8 dígitos seguidos de una letra mayúscula (por ejemplo, 12345678A)" required><br><br>
+    
+    <label for="codigo_postal">Código Postal:</label><br>
+<input type="text" id="codigo_postal" name="codigo_postal" pattern="[0-9]{5}" placeholder="Ej: 06230" required><br><br>
+
+    <label for="fecha">Fecha de cumpleaños:</label><br>
+<input type="date" id="fecha" name="fecha" required><br><br>
+
+<label for="color">Color favorito:</label><br>
+<input type="color" id="color" name="color" value="#000000"><br><br>
+
     <label for="mensaje">Mensaje:</label><br>
     <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+
+    <label for="satisfaccion">Nivel de Facha (1 a 10):</label><br>
+<input type="range" id="satisfaccion" name="satisfaccion" min="1" max="10" value="5" oninput="satisfaccionOutput.value = satisfaccion.value">
+<output name="satisfaccionOutput" id="satisfaccionOutput">5</output>
+<br><br>
 
     <input type="submit" value="Enviar">
 </form>
