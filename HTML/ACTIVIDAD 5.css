@@ -1,0 +1,32 @@
+/* Usar la fuente de Google Fonts para el título principal */
+.titulo-principal {
+    font-family: 'Lobster', cursive;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Usar otra fuente de Google Fonts para los textos informativos */
+.texto-informativo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #34495e;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+/* Incrustación de fuente local usando @font-face */
+@font-face {
+    font-family: 'MiFuentePersonalizada';
+    src: url('fonts/MiFuentePersonalizada.woff2') format('woff2'),
+         url('fonts/MiFuentePersonalizada.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Aplicación de la fuente incrustada */
+.texto-incrustado {
+    font-family: 'MiFuentePersonalizada', sans-serif;
+    color: #8e44ad;
+    font-size: 1.1em;
+    margin: 20px;
+}
