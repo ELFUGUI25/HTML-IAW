@@ -1,0 +1,38 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo del encabezado */
+header {
+    margin-bottom: 20px;
+}
+
+.titulo {
+    color: #333;
+}
+
+/* Gradiente Lineal */
+.linear-gradient {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* De naranja a rosa */
+    color: white;
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+/* Gradiente Radial */
+.radial-gradient {
+    background: radial-gradient(circle, #6a11cb, #2575fc); /* De púrpura a azul */
+    color: white;
+    padding: 30px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
