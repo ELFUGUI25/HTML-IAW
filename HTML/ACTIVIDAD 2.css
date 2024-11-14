@@ -1,0 +1,62 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Esquinas redondeadas */
+.box {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+.rounded-small {
+    border-radius: 5px;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    line-height: 60px;
+    display: inline-block;
+}
+
+/* Sombra de texto */
+.title-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-small {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-shadow-colored {
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.7);
+}
+
+/* Sombra de caja */
+.box-shadow-small {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #FF5722;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.box-shadow-colored {
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #8E44AD;
+    color: white;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(255, 0, 0, 0.7);
+}

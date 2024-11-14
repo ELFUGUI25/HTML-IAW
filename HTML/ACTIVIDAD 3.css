@@ -1,0 +1,69 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    color: hsl(210, 100%, 30%);
+}
+
+/* Colores HSL */
+.color-hsl1 {
+    background-color: hsl(210, 100%, 80%);
+    color: hsl(210, 100%, 20%);
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.color-hsl2 {
+    background-color: hsl(120, 70%, 75%);
+    color: hsl(120, 100%, 20%);
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Colores RGBA */
+.color-rgba1 {
+    background-color: rgba(255, 0, 0, 0.3); /* Rojo con transparencia */
+    color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.color-rgba2 {
+    background-color: rgba(0, 0, 0, 0.5); /* Negro semi-transparente */
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Colores HSLA */
+.color-hsla1 {
+    background-color: hsla(30, 100%, 50%, 0.4); /* Naranja con transparencia */
+    color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.color-hsla2 {
+    background-color: hsla(270, 100%, 50%, 0.3); /* Púrpura con transparencia */
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
