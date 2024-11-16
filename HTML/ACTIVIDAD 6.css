@@ -1,6 +1,5 @@
-/* Aplicar múltiples imágenes de fondo al cuerpo */
 body {
-    background-image: url('amogus.png');
+    background-image: url('images.jpeg'), url('amogus.png');
     background-position: center, top left;
     background-repeat: no-repeat, repeat;
     background-size: cover, 50px 50px;
@@ -10,7 +9,6 @@ body {
     padding: 0;
 }
 
-/* Estilos para el título principal */
 .titulo-principal {
     text-align: center;
     font-size: 2em;
@@ -18,7 +16,6 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Ajustes en el párrafo principal */
 main p {
     margin: 20px;
     padding: 10px;
