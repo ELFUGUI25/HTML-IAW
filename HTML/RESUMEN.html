@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumen de CSS Básico</title>
+  <style>
+    /* General */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 1em 0;
+      text-align: center;
+    }
+    main {
+      width: 80%;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      color: #007bff;
+    }
+    code {
+      background: #f1f1f1;
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: white;
+    }
+
+    /* Botones */
+    .boton {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .boton:hover {
+      background: #0056b3;
+    }
+    .boton:active {
+      transform: scale(0.95);
+    }
+
+    /* Imágenes animadas */
+    .imagen {
+      display: block;
+      margin: 20px auto;
+      width: 200px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .imagen:hover {
+      transform: scale(1.1) rotate(5deg);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Resumen Básico de CSS</h1>
+  </header>
+  <main>
+    <section>
+      <h2>¿Qué es CSS?</h2>
+      <p>CSS (Cascading Style Sheets) es un lenguaje que define estilos para elementos HTML. Permite controlar colores, tipografías, espaciados, y mucho más.</p>
+    </section>
+
+    <section>
+      <h2>Selección de Elementos</h2>
+      <ul>
+        <li><code>*</code>: Selecciona todos los elementos.</li>
+        <li><code>elemento</code>: Selecciona un elemento específico (e.g., <code>p</code>).</li>
+        <li><code>.clase</code>: Selecciona elementos con una clase específica.</li>
+        <li><code>#id</code>: Selecciona un elemento con un ID único.</li>
+        <li><code>elemento1 elemento2</code>: Selecciona elementos dentro de otro (selector descendiente).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Propiedades Básicas</h2>
+      <ul>
+        <li><strong>Color de texto:</strong> <code>color: red;</code></li>
+        <li><strong>Color de fondo:</strong> <code>background-color: yellow;</code></li>
+        <li><strong>Tipografía:</strong> <code>font-family: Arial, sans-serif;</code></li>
+        <li><strong>Tamaño de fuente:</strong> <code>font-size: 16px;</code></li>
+        <li><strong>Margen:</strong> <code>margin: 20px;</code></li>
+        <li><strong>Relleno:</strong> <code>padding: 10px;</code></li>
+        <li><strong>Border:</strong> <code>border: 1px solid black;</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Modelo de Caja</h2>
+      <p>Todos los elementos en CSS tienen un <strong>modelo de caja</strong>, compuesto por:</p>
+      <ul>
+        <li><strong>Contenido:</strong> El área donde va el texto o los elementos.</li>
+        <li><strong>Relleno (padding):</strong> Espacio entre el contenido y el borde.</li>
+        <li><strong>Borde (border):</strong> El borde que rodea el elemento.</li>
+        <li><strong>Margen (margin):</strong> Espacio fuera del borde.</li>
+      </ul>
+      <p>Ejemplo:</p>
+      <code>box { margin: 10px; padding: 5px; border: 2px solid black; }</code>
+    </section>
+
+    <section>
+      <h2>Posicionamiento</h2>
+      <ul>
+        <li><strong>Static:</strong> Posición predeterminada.</li>
+        <li><strong>Relative:</strong> Desplazamiento relativo a su posición inicial.</li>
+        <li><strong>Absolute:</strong> Posición relativa al contenedor más cercano con <code>position: relative;</code>.</li>
+        <li><strong>Fixed:</strong> Fijo en la ventana del navegador.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Transformaciones y Transiciones</h2>
+      <ul>
+        <li><strong>Transformar:</strong> <code>transform: rotate(45deg);</code></li>
+        <li><strong>Transiciones:</strong> <code>transition: all 0.3s ease;</code></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Botones</h2>
+      <p>Estilizar botones mejora la experiencia del usuario:</p>
+      <button class="boton">Haz clic aquí</button>
+      <ul>
+        <li><strong>Colores y bordes:</strong> Define el estilo básico del botón.</li>
+        <li><strong>Hover:</strong> Cambia el color al pasar el mouse.</li>
+        <li><strong>Active:</strong> Reduce el tamaño para simular un clic.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Movimiento en Imágenes</h2>
+      <p>Usa transformaciones y transiciones para crear efectos dinámicos en imágenes:</p>
+      <img src="RobloxScreenShot20241121_202745105.png" alt="Ejemplo de imagen" class="imagen">
+      <ul>
+        <li><strong>Zoom:</strong> Escala la imagen (<code>transform: scale(1.1);</code>).</li>
+        <li><strong>Rotación:</strong> Rota la imagen (<code>transform: rotate(5deg);</code>).</li>
+        <li><strong>Sombra:</strong> Añade profundidad (<code>box-shadow</code>).</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>¡Buena suerte en tu examen! 💪</p>
+  </footer>
+</body>
+</html>
